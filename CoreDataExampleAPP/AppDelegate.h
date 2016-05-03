@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "Person.h"
+#import "Chore.h"
+#import "ChoreLog.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -20,6 +23,9 @@
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 
+-(Chore *) createChore;
+-(ChoreLog *) createChoreLog;
+-(Person *) createPerson;  //create "person" manage object
 
 @end
 

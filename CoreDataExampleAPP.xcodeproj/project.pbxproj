@@ -16,6 +16,12 @@
 		0D1C91991CD8D7A3004E6F5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D1C91971CD8D7A3004E6F5A /* LaunchScreen.storyboard */; };
 		0D1C91A41CD8D7A3004E6F5A /* CoreDataExampleAPPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1C91A31CD8D7A3004E6F5A /* CoreDataExampleAPPTests.m */; };
 		0D1C91AF1CD8D7A3004E6F5A /* CoreDataExampleAPPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1C91AE1CD8D7A3004E6F5A /* CoreDataExampleAPPUITests.m */; };
+		0D1C91DB1CD8D99C004E6F5A /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1C91D01CD8D99C004E6F5A /* Person+CoreDataProperties.m */; };
+		0D1C91DC1CD8D99C004E6F5A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1C91D21CD8D99C004E6F5A /* Person.m */; };
+		0D1C91DD1CD8D99C004E6F5A /* Chore+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1C91D41CD8D99C004E6F5A /* Chore+CoreDataProperties.m */; };
+		0D1C91DE1CD8D99C004E6F5A /* Chore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1C91D61CD8D99C004E6F5A /* Chore.m */; };
+		0D1C91DF1CD8D99C004E6F5A /* ChoreLog+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1C91D81CD8D99C004E6F5A /* ChoreLog+CoreDataProperties.m */; };
+		0D1C91E01CD8D99C004E6F5A /* ChoreLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1C91DA1CD8D99C004E6F5A /* ChoreLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,18 @@
 		0D1C91AA1CD8D7A3004E6F5A /* CoreDataExampleAPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataExampleAPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D1C91AE1CD8D7A3004E6F5A /* CoreDataExampleAPPUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataExampleAPPUITests.m; sourceTree = "<group>"; };
 		0D1C91B01CD8D7A3004E6F5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D1C91CF1CD8D99C004E6F5A /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataProperties.h"; sourceTree = "<group>"; };
+		0D1C91D01CD8D99C004E6F5A /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
+		0D1C91D11CD8D99C004E6F5A /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		0D1C91D21CD8D99C004E6F5A /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		0D1C91D31CD8D99C004E6F5A /* Chore+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Chore+CoreDataProperties.h"; sourceTree = "<group>"; };
+		0D1C91D41CD8D99C004E6F5A /* Chore+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Chore+CoreDataProperties.m"; sourceTree = "<group>"; };
+		0D1C91D51CD8D99C004E6F5A /* Chore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chore.h; sourceTree = "<group>"; };
+		0D1C91D61CD8D99C004E6F5A /* Chore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chore.m; sourceTree = "<group>"; };
+		0D1C91D71CD8D99C004E6F5A /* ChoreLog+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ChoreLog+CoreDataProperties.h"; sourceTree = "<group>"; };
+		0D1C91D81CD8D99C004E6F5A /* ChoreLog+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ChoreLog+CoreDataProperties.m"; sourceTree = "<group>"; };
+		0D1C91D91CD8D99C004E6F5A /* ChoreLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoreLog.h; sourceTree = "<group>"; };
+		0D1C91DA1CD8D99C004E6F5A /* ChoreLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoreLog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +121,7 @@
 		0D1C91851CD8D7A2004E6F5A /* CoreDataExampleAPP */ = {
 			isa = PBXGroup;
 			children = (
+				0D1C91BC1CD8D8EE004E6F5A /* CodeDadaObjects */,
 				0D1C91891CD8D7A3004E6F5A /* AppDelegate.h */,
 				0D1C918A1CD8D7A3004E6F5A /* AppDelegate.m */,
 				0D1C918C1CD8D7A3004E6F5A /* ViewController.h */,
@@ -141,6 +160,25 @@
 				0D1C91B01CD8D7A3004E6F5A /* Info.plist */,
 			);
 			path = CoreDataExampleAPPUITests;
+			sourceTree = "<group>";
+		};
+		0D1C91BC1CD8D8EE004E6F5A /* CodeDadaObjects */ = {
+			isa = PBXGroup;
+			children = (
+				0D1C91CF1CD8D99C004E6F5A /* Person+CoreDataProperties.h */,
+				0D1C91D01CD8D99C004E6F5A /* Person+CoreDataProperties.m */,
+				0D1C91D11CD8D99C004E6F5A /* Person.h */,
+				0D1C91D21CD8D99C004E6F5A /* Person.m */,
+				0D1C91D31CD8D99C004E6F5A /* Chore+CoreDataProperties.h */,
+				0D1C91D41CD8D99C004E6F5A /* Chore+CoreDataProperties.m */,
+				0D1C91D51CD8D99C004E6F5A /* Chore.h */,
+				0D1C91D61CD8D99C004E6F5A /* Chore.m */,
+				0D1C91D71CD8D99C004E6F5A /* ChoreLog+CoreDataProperties.h */,
+				0D1C91D81CD8D99C004E6F5A /* ChoreLog+CoreDataProperties.m */,
+				0D1C91D91CD8D99C004E6F5A /* ChoreLog.h */,
+				0D1C91DA1CD8D99C004E6F5A /* ChoreLog.m */,
+			);
+			name = CodeDadaObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +311,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D1C91DC1CD8D99C004E6F5A /* Person.m in Sources */,
+				0D1C91DF1CD8D99C004E6F5A /* ChoreLog+CoreDataProperties.m in Sources */,
+				0D1C91E01CD8D99C004E6F5A /* ChoreLog.m in Sources */,
 				0D1C918E1CD8D7A3004E6F5A /* ViewController.m in Sources */,
+				0D1C91DD1CD8D99C004E6F5A /* Chore+CoreDataProperties.m in Sources */,
+				0D1C91DE1CD8D99C004E6F5A /* Chore.m in Sources */,
 				0D1C918B1CD8D7A3004E6F5A /* AppDelegate.m in Sources */,
 				0D1C91881CD8D7A3004E6F5A /* main.m in Sources */,
+				0D1C91DB1CD8D99C004E6F5A /* Person+CoreDataProperties.m in Sources */,
 				0D1C91941CD8D7A3004E6F5A /* CoreDataExampleAPP.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

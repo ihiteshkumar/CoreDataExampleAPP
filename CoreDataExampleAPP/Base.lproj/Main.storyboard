@@ -1,25 +1,109 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of item in Chore Data:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeO-yL-nhd">
+                                <rect key="frame" x="41" y="28" width="239" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ryV-10-V3x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the chore:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haX-Gr-bXI">
+                                <rect key="frame" x="41" y="90" width="239" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="wff-6G-Fri"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHB-28-ofn">
+                                <rect key="frame" x="41" y="262" width="239" height="186"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEZ-8y-um9">
+                                <rect key="frame" x="41" y="192" width="239" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="X4o-ZY-vbT"/>
+                                </constraints>
+                                <state key="normal" title="Add a Chore"/>
+                                <connections>
+                                    <action selector="addChoreButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6x3-jJ-BYn"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="add chore" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Kf-bM-Dt2">
+                                <rect key="frame" x="41" y="134" width="239" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="vnU-RD-V6h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHF-iR-mxl">
+                                <rect key="frame" x="41" y="493" width="239" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FrE-A1-dms"/>
+                                </constraints>
+                                <state key="normal" title="Clear Data"/>
+                                <connections>
+                                    <action selector="clearCoreData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="69e-Lq-DAc"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Kf-bM-Dt2" firstAttribute="top" secondItem="haX-Gr-bXI" secondAttribute="bottom" id="0aV-uZ-ls5"/>
+                            <constraint firstItem="ZHB-28-ofn" firstAttribute="leading" secondItem="uHF-iR-mxl" secondAttribute="leading" id="1EE-dd-oL0"/>
+                            <constraint firstItem="haX-Gr-bXI" firstAttribute="top" secondItem="TeO-yL-nhd" secondAttribute="bottom" constant="18" id="5i9-Lu-EeF"/>
+                            <constraint firstItem="GEZ-8y-um9" firstAttribute="trailing" secondItem="ZHB-28-ofn" secondAttribute="trailing" id="B8L-TT-SKY"/>
+                            <constraint firstItem="TeO-yL-nhd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="QVI-NW-x5k"/>
+                            <constraint firstItem="8Kf-bM-Dt2" firstAttribute="trailing" secondItem="GEZ-8y-um9" secondAttribute="trailing" id="Qay-BT-91k"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uHF-iR-mxl" secondAttribute="bottom" constant="45" id="UwS-cA-fhf"/>
+                            <constraint firstItem="TeO-yL-nhd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UxR-EF-Hsa"/>
+                            <constraint firstItem="ZHB-28-ofn" firstAttribute="top" secondItem="GEZ-8y-um9" secondAttribute="bottom" constant="40" id="Vqw-HW-DLK"/>
+                            <constraint firstItem="haX-Gr-bXI" firstAttribute="leading" secondItem="8Kf-bM-Dt2" secondAttribute="leading" id="ZKd-Ei-zjX"/>
+                            <constraint firstItem="TeO-yL-nhd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="blI-ph-viB"/>
+                            <constraint firstItem="TeO-yL-nhd" firstAttribute="trailing" secondItem="haX-Gr-bXI" secondAttribute="trailing" id="fAL-OL-8jf"/>
+                            <constraint firstItem="ZHB-28-ofn" firstAttribute="trailing" secondItem="uHF-iR-mxl" secondAttribute="trailing" id="gj1-Zl-Cie"/>
+                            <constraint firstItem="TeO-yL-nhd" firstAttribute="leading" secondItem="haX-Gr-bXI" secondAttribute="leading" id="hyq-w2-7Mu"/>
+                            <constraint firstItem="8Kf-bM-Dt2" firstAttribute="leading" secondItem="GEZ-8y-um9" secondAttribute="leading" id="nld-NN-VGN"/>
+                            <constraint firstItem="haX-Gr-bXI" firstAttribute="trailing" secondItem="8Kf-bM-Dt2" secondAttribute="trailing" id="rjS-48-Kjs"/>
+                            <constraint firstItem="GEZ-8y-um9" firstAttribute="leading" secondItem="ZHB-28-ofn" secondAttribute="leading" id="sWd-Lh-R1s"/>
+                            <constraint firstItem="uHF-iR-mxl" firstAttribute="top" secondItem="ZHB-28-ofn" secondAttribute="bottom" constant="45" id="w6H-OQ-bXe"/>
+                            <constraint firstItem="GEZ-8y-um9" firstAttribute="top" secondItem="8Kf-bM-Dt2" secondAttribute="bottom" constant="28" id="yvR-j7-Bz0"/>
+                        </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="displayChoresLabel" destination="ZHB-28-ofn" id="si2-oH-dre"/>
+                        <outlet property="inputField" destination="8Kf-bM-Dt2" id="MFL-hK-2bU"/>
+                        <outlet property="totalItemCountLabel" destination="TeO-yL-nhd" id="HCS-2t-xEc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="260" y="349"/>
         </scene>
     </scenes>
 </document>
