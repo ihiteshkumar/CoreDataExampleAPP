@@ -64,8 +64,13 @@
 }
 - (IBAction)clearCoreData:(id)sender {
     NSManagedObjectContext * moc = self.appDelegate.managedObjectContext;
+    
     NSFetchRequest * req = [[NSFetchRequest alloc] initWithEntityName:@"Chore"];
     NSError * error ;
+    
+    //For Delete particular text // we can also use "like" instead of "==" // and we also can search like this
+//    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"chore_name ==%@", self.inputField.text];
+//    [req setPredicate:predicate];
     
     NSArray * results = [moc executeFetchRequest:req error:&error];
     if(!results)
